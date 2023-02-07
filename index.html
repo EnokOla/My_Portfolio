@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acd4da4d53.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+</head>
+
+<body>
+    <!-- Home section -->
+    <section id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">AR<span class="folio">Tech</span> </h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="nav-togglers" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <img id="nav-togglers" onclick="openmenu()" src="./Images/icon-hamburger.svg" alt="">
+            </nav>
+
+            <div class="heading">
+                <p>Web <span>Designer</span>/Artist</p>
+                <h1>Hi, I'm <span class="myname">Enoch</span> Olayemi <br> from <span class="nigeria"> Nig</span>er<span
+                        class="nigeria">ia</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="enoch" src="./Images/Me Black&White.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore consequuntur odit repellendus
+                        odio minus exercitationem quasi amet reprehenderit consequatur ut ipsum asperiores illo, cumque
+                        earum laborum magnam animi ab qui!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil suscipit cum nesciunt iure
+                        exercitationem animi reprehenderit necessitatibus ratione, minima vitae repellendus, quod
+                        inventore saepe doloribus dolore maxime! Laboriosam, soluta.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" id="skl" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" id="exp" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" id="edu" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li>
+                            <li><span>Web Design</span><br>Web App Development</li>
+                            <li><span>Art</span><br>See my Artworks</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Web Design training at 720Degree Hub</li>
+                            <li><span>2019 - 2021</span><br>Internship at StarCode LLC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Web Design training at 720Degree Hub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <!-- projects  -->
+            <div class="work-project-list">
+                <div class="work">
+                    <img src="./Images/desktop-design 1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Easybank Project</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/desktop-design 2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Manage Project</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/desktop-design 3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Monograph Project</h3>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See more</a>
+            <!-- artworks -->
+            <div class="work-art-list">
+                <div class="work">
+                    <!-- <img src="./Images/art-design 1.jpg" alt=""> -->
+                    <div class="layer">
+                        <h3>Monograph Project</h3>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/art-design 2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Monograph Project</h3>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- <img src="./Images/art-design 3.jpg" alt=""> -->
+                    <div class="layer">
+                        <h3>Monograph Project</h3>
+                        <a href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See more</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Design Landing Webpages</h2>
+                    <p>Lorem ipsum dolor sit amet, Sapiente esse aliquid impedit vel?
+                    </p>
+                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Design Portfolio Websites</h2>
+                    <p>Lorem ipsum adipisicing elits. Soluta voluptas consequuntur!</p>
+                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Design Your Artworks</h2>
+                    <p>Lorem, ipsum dolor sit amet uae cumque aspernatur? Soluta consequuntur!</p>
+                    <a href="#">Learn More <i class="fa-solid fa-circle-info"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> enocholayemi928@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 08089138654</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></i></a>
+                    </div>
+                    <a class="btn btn2" href="">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright Section -->
+    <section class="copyright">
+        <p>Copyright @ Enoch. Made with by Artech Inc.</p>
+    </section>
+</body>
+
+<script src="app.js"></script>
+
+</html>
